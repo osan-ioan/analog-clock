@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title>Clock</title>
+    <style>
+        .body {
+            display: flex;
+        }
+        
+        .container {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(131, 177, 179);
+        }
+        
+        .clock {
+            width: 350px;
+            height: 350px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: #f1f1f1d8;
+            position: relative;
+        }
+        
+        .mijloc {
+            position: absolute;
+            border: 2px solid black;
+            height: 7px;
+            width: 7px;
+            margin-top: 175px;
+            margin-left: 171px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: white;
+            z-index: 4;
+        }
+        
+        .secunde {
+            position: relative;
+            width: 2px;
+            height: 155px;
+            background-color: rgb(235, 17, 35);
+            content: '';
+            left: 175;
+            top: 26;
+            z-index: 3;
+            transform-origin: bottom;
+            animation: moveSec 60s linear infinite;
+        }
+        
+        .minute {
+            position: relative;
+            width: 4px;
+            height: 128px;
+            background-color: rgb(35, 12, 240);
+            content: '';
+            left: 174;
+            top: -105;
+            z-index: 2;
+            transform-origin: bottom;
+            animation: moveMin 3600s linear infinite;
+        }
+        
+        .ore {
+            position: relative;
+            width: 5px;
+            height: 115px;
+            background-color: rgb(10, 10, 10);
+            content: '';
+            left: 174;
+            top: -215;
+            z-index: 1;
+            transform-origin: bottom;
+            animation: moveOre 86400s linear infinite;
+        }
+        
+        @keyframes moveSec {
+            from {
+                transform: rotateZ(0deg);
+            }
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+        
+        @keyframes moveMin {
+            from {
+                transform: rotateZ(0deg);
+            }
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+        
+        @keyframes moveOre {
+            from {
+                transform: rotateZ(0deg);
+            }
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock">
+            <div class="mijloc"></div>
+            <div class="secunde"></div>
+            <div class="minute"></div>
+            <div class="ore"></div>
+        </div>
+    </div>
+</body>
+
+</html>

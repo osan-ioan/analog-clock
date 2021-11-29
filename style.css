@@ -1,0 +1,199 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#2E4272, #582A72);
+}
+
+.clock {
+    width: 321px;
+    height: 321px;
+    background-color: #F0F0F0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border: 16px, solid #303030;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock::before {
+    position: absolute;
+    content: '';
+    width: 330px;
+    height: 330px;
+    border: 6px solid #202020;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nuca {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #505050;
+    border-radius: 50%;
+}
+
+.nuca:before {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    background-color: #303030;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    z-index: 1;
+}
+
+.ora-mark {
+    position: absolute;
+    width: 2px;
+    height: 35px;
+    background-color: #6b2c2c;
+}
+
+.ora-mark-0 {
+    transform: translateY(-132px);
+}
+
+.ora-mark-1 {
+    transform: rotate(30deg) translateY(-132px);
+}
+
+.ora-mark-2 {
+    transform: rotate(60deg) translateY(-132px);
+}
+
+.ora-mark-3 {
+    transform: rotate(90deg) translateY(-132px);
+}
+
+.ora-mark-4 {
+    transform: rotate(120deg) translateY(-132px);
+}
+
+.ora-mark-5 {
+    transform: rotate(150deg) translateY(-132px);
+}
+
+.ora-mark-6 {
+    transform: rotate(180deg) translateY(-132px);
+}
+
+.ora-mark-7 {
+    transform: rotate(210deg) translateY(-132px);
+}
+
+.ora-mark-8 {
+    transform: rotate(240deg) translateY(-132px);
+}
+
+.ora-mark-9 {
+    transform: rotate(270deg) translateY(-132px);
+}
+
+.ora-mark-10 {
+    transform: rotate(300deg) translateY(-132px);
+}
+
+.ora-mark-11 {
+    transform: rotate(330deg) translateY(-132px);
+}
+
+.secunde-indice {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    transform: rotate(240deg);
+}
+
+.secunde-indice::before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 150 px;
+    background-color: #0c0a91;
+    left: -1px;
+    top: -120px;
+    border-radius: 1px;
+}
+
+.secunde-indice ::after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 48px;
+    background-color: #db0e0e;
+    left: -3px;
+    top: 12px;
+    border-radius: 3px;
+}
+
+.minute-indice {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    transform: rotate(120deg);
+}
+
+.minute-indice::before {
+    position: absolute;
+    content: '';
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 75px solid #303030;
+    left: -3px;
+    top: -100px;
+    width: 1px;
+    height: 1px;
+}
+
+.minute imdice::after {
+    position: absolute;
+    content: '';
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-top: 25 px;
+    left: -3px;
+    top: -25px;
+    width: 3px;
+    height: 1px;
+}
+
+.ore-indice {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
+
+.ore-indice ::before {
+    position: absolute;
+    content: '';
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 60px solid #303030;
+    left: -3px;
+    top: -80px;
+    width: 1 px;
+    height: 1px;
+}
+
+.ore-indice::after {
+    position: absolute;
+    content: '';
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 20px solid #303030;
+    left: -3px;
+    top: -20px;
+    width: 3px;
+    height: 1px;
+}
